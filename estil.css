@@ -1,0 +1,167 @@
+@font-face {
+  font-family: gwent1;
+  src: url(fonts/hinted-GWENT-ExtraBold.woff);
+}
+@font-face {
+  font-family: gwent2;
+  src: url(fonts/hinted-GWENT-ExtraBold.woff2);
+}
+@font-face {
+  font-family: gwentN;
+  src: url(fonts/hinted-HalisGR-Bold.woff2);
+}
+@font-face {
+  font-family: gwentM;
+  src: url(fonts/hinted-HalisGR-Book.woff2);
+}
+@font-face {
+  font-family: gwentL;
+  src: url(fonts/hinted-HalisGR-Light.woff2);
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #0B0C0E;
+  margin: 0 auto;
+  width: 100%;
+}
+body header {
+  position: relative;
+  background-image: url('img/large_back.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+body header > section:first-of-type {
+  color: white;
+  height: 100vh;
+  position: relative;
+  flex-direction: column;
+}
+body header > section:first-of-type p {
+  display: block;
+  margin-top: 30px;
+  margin-left: 66%;
+  font-size: 24px;
+  text-align: center;
+  width: 400px;
+  font-family: gwentM;
+}
+body header > section:first-of-type h1 {
+  position: relative;
+  font-family: gwentN;
+  font-size: 25px;
+  text-shadow: 1px 1px 3px rgba(206, 0, 0, 0.473), -1px -1px 3px rgba(206, 0, 0, 0.473);
+  color: black;
+  display: block;
+  margin-top: 150px;
+  margin-left: 71%;
+  text-transform: uppercase;
+  z-index: 1;
+}
+body header > section:first-of-type h1::after {
+  content: "";
+  position: absolute;
+  display: block;
+  background-image: url(img/silver-button.png);
+  width: 420px;
+  height: 450px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  top: -212px;
+  z-index: -1;
+  left: -100px;
+}
+body header > section:first-of-type > img:first-child {
+  transform: translateY(100px);
+  margin-left: 60%;
+  display: block;
+  width: 590px;
+  height: 520px;
+  top: 15%;
+  left: 60%;
+}
+body header .offers {
+  color: white;
+  width: 80%;
+  height: 1000px;
+  margin: 0 auto;
+}
+body header .offers img {
+  display: block;
+}
+body header .offers article:first-of-type {
+  display: flex;
+  margin: 0 auto;
+}
+body header .offers article:first-of-type > div h2 {
+  transform: translateY(-60px);
+  text-align: center;
+  font-family: gwent1;
+  color: #A5351D;
+  font-size: 65px;
+  text-transform: uppercase;
+  display: block;
+}
+body header .offers article:first-of-type > div h2:after {
+  content: "";
+  display: block;
+  background-image: url(img/separator.png);
+  height: 50px;
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+body header .offers article:first-of-type > div main p:first-of-type {
+  margin-top: 0px;
+}
+body header .offers article:first-of-type > div main p {
+  /*  width: 500px; */
+  margin-left: 40px !important;
+  text-align: left;
+  display: block;
+  font-size: 26px;
+  line-height: 1.1;
+  font-family: gwentM;
+}
+body header .offers article:first-of-type img {
+  float: left;
+  width: 1000px;
+  height: 500px;
+}
+body header ul {
+  position: absolute;
+  top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  background-position: center;
+  background-size: contain;
+  background-image: url("img/menu_bg.png");
+  background-repeat: no-repeat;
+  color: black;
+  width: 100%;
+  height: 80px;
+}
+body header ul li {
+  font-family: gwentN;
+  font-size: 22px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 3px rgba(206, 0, 0, 0.473), -1px -1px 3px rgba(206, 0, 0, 0.473);
+  line-height: 80px;
+  text-align: center;
+  transform: translateX(-100px);
+}
+body header ul li:first-of-type::before {
+  content: "";
+  display: block;
+  width: 150px;
+  height: 150px;
+  background-image: url("img/blacksun_logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: translate(50px, -30px);
+}
+body header ul li:last-child {
+  transform: translateX(1px);
+}
