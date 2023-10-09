@@ -33,6 +33,7 @@ body header {
   background-repeat: no-repeat;
 }
 body header > section:first-of-type {
+  margin-bottom: 350px;
   color: white;
   height: 100vh;
   position: relative;
@@ -41,7 +42,7 @@ body header > section:first-of-type {
 body header > section:first-of-type p {
   display: block;
   margin-top: 30px;
-  margin-left: 66%;
+  margin-left: 65%;
   font-size: 24px;
   text-align: center;
   width: 400px;
@@ -77,8 +78,8 @@ body header > section:first-of-type > img:first-child {
   transform: translateY(100px);
   margin-left: 60%;
   display: block;
-  width: 590px;
-  height: 520px;
+  width: 35%;
+  height: 60%;
   top: 15%;
   left: 60%;
 }
@@ -126,7 +127,7 @@ body header .offers article:first-of-type > div main p {
 }
 body header .offers article:first-of-type img {
   float: left;
-  width: 1000px;
+  width: 65%;
   height: 500px;
 }
 body header ul {
