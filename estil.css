@@ -38,6 +38,7 @@ body header > section:first-of-type {
   height: 100vh;
   position: relative;
   flex-direction: column;
+  width: 100%;
 }
 body header > section:first-of-type p {
   display: block;
@@ -95,6 +96,10 @@ body header .offers img {
 body header .offers article:first-of-type {
   display: flex;
   margin: 0 auto;
+  width: 100%;
+}
+body header .offers article:first-of-type > div {
+  width: 70%;
 }
 body header .offers article:first-of-type > div h2 {
   transform: translateY(-60px);
@@ -104,31 +109,76 @@ body header .offers article:first-of-type > div h2 {
   font-size: 65px;
   text-transform: uppercase;
   display: block;
+  margin-right: 65px;
 }
 body header .offers article:first-of-type > div h2:after {
   content: "";
   display: block;
   background-image: url(img/separator.png);
-  height: 50px;
-  background-size: auto;
+  width: 100%;
+  height: 60px;
+  background-size: contain;
+  background-position: center;
   background-repeat: no-repeat;
-}
-body header .offers article:first-of-type > div main p:first-of-type {
-  margin-top: 0px;
 }
 body header .offers article:first-of-type > div main p {
   /*  width: 500px; */
   margin-left: 40px !important;
   text-align: left;
   display: block;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.1;
   font-family: gwentM;
+  width: 85%;
+  height: 25%;
 }
 body header .offers article:first-of-type img {
-  float: left;
-  width: 65%;
-  height: 500px;
+  width: 80%;
+  height: 100%;
+}
+body header .offers article + article {
+  width: 100%;
+  margin-top: 150px;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 0;
+}
+body header .offers article + article img {
+  display: block;
+  height: 100%;
+}
+body header .offers article + article div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+body header .offers article + article div p {
+  text-align: left;
+  display: block;
+  font-size: 24px;
+  line-height: 1.1;
+  font-family: gwentM;
+  width: 60%;
+}
+body header .offers article + article div h2 {
+  margin-top: 40px;
+  text-align: center;
+  font-family: gwent1;
+  color: #A5351D;
+  font-size: 55px;
+  text-transform: uppercase;
+  width: 60%;
+}
+body header .offers article + article div h2:after {
+  content: "";
+  display: block;
+  background-image: url(img/separator.png);
+  width: 100%;
+  height: 60px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 25px;
 }
 body header ul {
   position: absolute;
