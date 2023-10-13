@@ -21,18 +21,33 @@
 * {
   box-sizing: border-box;
 }
+h2 {
+  text-align: center;
+  font-family: gwent1;
+  color: #A5351D;
+  font-size: 65px;
+  text-transform: uppercase;
+}
+p {
+  display: block;
+  font-size: 24px;
+  line-height: 1.1;
+  font-family: gwentM;
+  color: white;
+  text-align: center;
+}
 body {
   background-color: #0B0C0E;
   margin: 0 auto;
   width: 100%;
 }
-body header {
+body > header {
   position: relative;
   background-image: url('img/large_back.jpg');
   background-size: contain;
   background-repeat: no-repeat;
 }
-body header > section:first-of-type {
+body > header > section:first-of-type {
   margin-bottom: 350px;
   color: white;
   height: 100vh;
@@ -40,7 +55,7 @@ body header > section:first-of-type {
   flex-direction: column;
   width: 100%;
 }
-body header > section:first-of-type p {
+body > header > section:first-of-type p {
   display: block;
   margin-top: 30px;
   margin-left: 65%;
@@ -49,7 +64,7 @@ body header > section:first-of-type p {
   width: 400px;
   font-family: gwentM;
 }
-body header > section:first-of-type h1 {
+body > header > section:first-of-type h1 {
   position: relative;
   font-family: gwentN;
   font-size: 25px;
@@ -61,7 +76,7 @@ body header > section:first-of-type h1 {
   text-transform: uppercase;
   z-index: 1;
 }
-body header > section:first-of-type h1::after {
+body > header > section:first-of-type h1::after {
   content: "";
   position: absolute;
   display: block;
@@ -75,7 +90,7 @@ body header > section:first-of-type h1::after {
   z-index: -1;
   left: -100px;
 }
-body header > section:first-of-type > img:first-child {
+body > header > section:first-of-type > img:first-child {
   transform: translateY(100px);
   margin-left: 60%;
   display: block;
@@ -84,24 +99,24 @@ body header > section:first-of-type > img:first-child {
   top: 15%;
   left: 60%;
 }
-body header .offers {
+body > header .offers {
   color: white;
   width: 80%;
-  height: 1000px;
+  height: auto;
   margin: 0 auto;
 }
-body header .offers img {
+body > header .offers img {
   display: block;
 }
-body header .offers article:first-of-type {
+body > header .offers article:first-of-type {
   display: flex;
   margin: 0 auto;
   width: 100%;
 }
-body header .offers article:first-of-type > div {
+body > header .offers article:first-of-type > div {
   width: 70%;
 }
-body header .offers article:first-of-type > div h2 {
+body > header .offers article:first-of-type > div h2 {
   transform: translateY(-60px);
   text-align: center;
   font-family: gwent1;
@@ -111,7 +126,7 @@ body header .offers article:first-of-type > div h2 {
   display: block;
   margin-right: 65px;
 }
-body header .offers article:first-of-type > div h2:after {
+body > header .offers article:first-of-type > div h2:after {
   content: "";
   display: block;
   background-image: url(img/separator.png);
@@ -121,7 +136,7 @@ body header .offers article:first-of-type > div h2:after {
   background-position: center;
   background-repeat: no-repeat;
 }
-body header .offers article:first-of-type > div main p {
+body > header .offers article:first-of-type > div main p {
   /*  width: 500px; */
   margin-left: 40px !important;
   text-align: left;
@@ -132,27 +147,27 @@ body header .offers article:first-of-type > div main p {
   width: 85%;
   height: 25%;
 }
-body header .offers article:first-of-type img {
+body > header .offers article:first-of-type img {
   width: 80%;
   height: 100%;
 }
-body header .offers article + article {
+body > header .offers article + article {
   width: 100%;
   margin-top: 150px;
   display: flex;
   flex-direction: row-reverse;
   gap: 0;
 }
-body header .offers article + article img {
+body > header .offers article + article img {
   display: block;
   height: 100%;
 }
-body header .offers article + article div {
+body > header .offers article + article div {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-body header .offers article + article div p {
+body > header .offers article + article div p {
   text-align: left;
   display: block;
   font-size: 24px;
@@ -160,7 +175,7 @@ body header .offers article + article div p {
   font-family: gwentM;
   width: 60%;
 }
-body header .offers article + article div h2 {
+body > header .offers article + article div h2 {
   margin-top: 40px;
   text-align: center;
   font-family: gwent1;
@@ -169,7 +184,7 @@ body header .offers article + article div h2 {
   text-transform: uppercase;
   width: 60%;
 }
-body header .offers article + article div h2:after {
+body > header .offers article + article div h2:after {
   content: "";
   display: block;
   background-image: url(img/separator.png);
@@ -180,7 +195,7 @@ body header .offers article + article div h2:after {
   background-repeat: no-repeat;
   margin-bottom: 25px;
 }
-body header ul {
+body > header ul {
   position: absolute;
   top: 30px;
   display: flex;
@@ -194,7 +209,7 @@ body header ul {
   width: 100%;
   height: 80px;
 }
-body header ul li {
+body > header ul li {
   font-family: gwentN;
   font-size: 22px;
   text-transform: uppercase;
@@ -203,7 +218,7 @@ body header ul li {
   text-align: center;
   transform: translateX(-100px);
 }
-body header ul li:first-of-type::before {
+body > header ul li:first-of-type::before {
   content: "";
   display: block;
   width: 150px;
@@ -213,6 +228,383 @@ body header ul li:first-of-type::before {
   background-size: contain;
   transform: translate(50px, -30px);
 }
-body header ul li:last-child {
+body > header ul li:last-child {
   transform: translateX(1px);
+}
+body > main {
+  margin-bottom: 120px;
+  position: relative;
+  width: 75%;
+  margin-inline: auto;
+  margin-top: 150px;
+}
+body > main::before {
+  position: absolute;
+  content: "";
+  display: block;
+  background-image: url(img/frame_gran.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  transform: scaleX(1.1) scaleY(1.4) translateY(5%);
+}
+body > main::after {
+  position: absolute;
+  content: "";
+  display: block;
+  background-image: url(img/separator.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  width: 50%;
+  height: 150px;
+  top: 150px;
+  margin-inline: auto;
+  left: 50%;
+  transform: translateX(-50%);
+}
+body > main .collections > p {
+  margin-top: 25px;
+}
+body > main .collections > main {
+  margin-top: 150px;
+}
+body > main .collections > main ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 30px;
+}
+body > main .collections > main ul li:first-of-type img {
+  filter: grayscale(100%);
+}
+body > main .collections > main ul img {
+  width: 110px;
+  height: 130px;
+}
+body > main .cards {
+  display: flex;
+  margin-top: 130px;
+  margin-inline: auto;
+  gap: 10px;
+  flex-wrap: wrap;
+  height: auto;
+}
+body > main .cards::after {
+  position: absolute;
+  content: "";
+  display: block;
+  background-image: url(img/frame_gran.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: start;
+  width: 100%;
+  height: 5px;
+  top: 450px;
+  transform: scaleX(1.08);
+}
+body > main .cards h3 {
+  text-transform: uppercase;
+  font-size: 20px !important;
+  font-family: gwent1;
+  color: #A5351D;
+  font-size: 65px;
+  margin-left: 15px;
+  line-height: 20px;
+  margin-bottom: 30px;
+}
+body > main .cards h2 {
+  font-size: 25px;
+  color: white;
+  font-family: gwentM;
+  text-align: left;
+  text-transform: capitalize;
+  margin-left: 15px;
+  line-height: 20px;
+  margin-bottom: 5px;
+}
+body > main .cards h4 {
+  font-size: 25px;
+  color: white;
+  font-family: gwentM;
+  text-align: left;
+  text-transform: capitalize;
+  border-bottom: 1px solid rgba(218, 218, 218, 0.671);
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+  margin-left: 15px;
+  line-height: 20px;
+}
+body > main .cards p {
+  font-size: 20px;
+  text-align: left;
+  margin-left: 15px;
+  line-height: 35px;
+}
+body > main .cards q {
+  font-size: 18px;
+  text-align: left;
+  margin-left: 15px;
+  color: white;
+  font-style: italic;
+  line-height: 35px;
+  display: block;
+}
+body > main .cards figure {
+  position: relative;
+  height: 300px;
+  width: 200px;
+}
+body > main .cards figure img {
+  display: block;
+  height: 300px;
+  width: 200px;
+  z-index: 0;
+}
+body > main .cards figure i b {
+  z-index: 1;
+  position: absolute;
+  color: #E2A73E;
+  font-size: 50px;
+  bottom: 5px;
+  right: 10px;
+  font-family: gwent1;
+  -webkit-text-stroke: 2px black;
+}
+body > main .cards figure i::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-image: url(img/cost.png);
+  background-repeat: no-repeat;
+  bottom: 0px;
+  left: 100%;
+  transform: translateX(-50%) scaleX(1.3);
+  background-size: contain;
+  z-index: 0 !important;
+}
+body > main .cards figure i::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-image: url(img/frame-basis-gold.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+body > main .cards .legendary {
+  width: 49%;
+  height: 80%;
+  display: flex;
+}
+body > main .cards .legendary figure::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-image: url(img/gem-legendary.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  z-index: 3;
+}
+body > main .cards .legendary > main ul {
+  margin-left: 50px;
+}
+body > main .cards .legendary > main > q:first-of-type {
+  margin-bottom: 60px;
+}
+body > main .cards .legendary > main .gold {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body > main .cards .legendary > main figure img {
+  height: 250px;
+  width: 180px;
+}
+body > main .cards .legendary > main i::after {
+  width: 180px;
+  height: 250px;
+  transform: scaleX(1.1);
+}
+body > main .cards .legendary > main i::before {
+  left: 180px;
+  top: 50%;
+  bottom: auto;
+}
+body > main .cards .legendary > main i b {
+  bottom: auto;
+  right: auto;
+  left: 72%;
+  top: 65%;
+}
+body > main .cards .epic {
+  width: 50%;
+  display: flex;
+}
+body > main .cards .epic figure::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-image: url(img/gem-epic.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  z-index: 3;
+}
+body > main .cards .rare {
+  display: flex;
+  width: 49%;
+}
+body > main .cards .rare figure::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-image: url(img/gem-rare.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  z-index: 3;
+}
+body > main .cards .common {
+  display: flex;
+  width: 50%;
+}
+body > main .cards .common figure {
+  position: relative;
+}
+body > main .cards .common figure img {
+  display: block;
+  position: relative;
+  height: 300px;
+  width: 200px;
+  z-index: 0;
+}
+body > main .cards .common figure b {
+  z-index: 1;
+  position: absolute;
+  color: #E2A73E;
+  font-size: 50px;
+  bottom: 5px;
+  right: 10px;
+  font-family: gwent1;
+  -webkit-text-stroke: 2px black;
+}
+body > main .cards .common figure::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-image: url(img/cost.png);
+  background-repeat: no-repeat;
+  bottom: 0px;
+  left: 100%;
+  transform: translateX(-45%) scaleX(1.3);
+  background-size: contain;
+  z-index: 1 !important;
+}
+body > main .cards .common figure::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-image: url(img/frame-basis-gold.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+body footer img {
+  margin-inline: auto;
+  display: block;
+}
+body footer div {
+  margin-top: 80px;
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+body footer div ul {
+  display: flex;
+  gap: 20px;
+}
+body footer div ul img {
+  width: 200px;
+  height: 90px;
+}
+body footer div p {
+  font-size: 30px;
+  width: 150px;
+  text-align: left;
+}
+body footer > p {
+  position: relative;
+  font-family: gwentN;
+  font-size: 25px;
+  text-shadow: 1px 1px 3px rgba(206, 0, 0, 0.473), -1px -1px 3px rgba(206, 0, 0, 0.473);
+  color: black;
+  display: block;
+  margin-top: 15px;
+  text-transform: uppercase;
+  z-index: 1;
+}
+body footer > p::after {
+  content: "";
+  position: absolute;
+  display: block;
+  background-image: url(img/silver-button.png);
+  width: 420px;
+  height: 450px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  z-index: -1;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -210px;
+}
+body footer > img {
+  width: 350px;
+  height: 300px;
+}
+.n4 {
+  position: relative;
+}
+.n4::after {
+  content: "";
+  display: block;
+  width: 500px;
+  height: 500px;
+  background-image: url(img/gem-common.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  z-index: 3;
 }
